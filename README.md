@@ -1,38 +1,60 @@
-# Robô Logo – Simulador de Movimentos com Orientação a Objetos (Java)
+# Robot – Obstacle and Movement Game with Object-Oriented Programming (Java)
 
-Projeto acadêmico desenvolvido para a disciplina de Programação Orientada a Objetos, com o objetivo de simular o comportamento de um robô em um plano cartesiano feito em Java, utilizando conceitos como exceções, herança, polimorfismo e classes abstratas.
+Academic project developed for the Object-Oriented Programming course.  
+The goal is to build a grid-based robot game in Java, where robots move around a 4x4 matrix, avoid obstacles, and search for food.  
+The project applies key OOP concepts such as exceptions, inheritance, polymorphism, and abstract classes.
 
-## Objetivo
+---
 
-Controlar um robô (ou dois robôs, podendo também ser um inteligente, onde possui propriedades automáticas de desvio de obstáculos quando já colidiu uma vez, diferentemente do robô comum, que bate randomicamente até sair por conta própria) dentro de uma matriz 4x4, movimentando-o para encontrar um alimento posicionado pelo usuário, respeitando restrições de movimento e obstáculos no ambiente.
+## Objective
 
-## Funcionalidades
+Control one or two robots in a 4x4 grid. The robots must navigate the space, avoid obstacles, and reach a food item placed by the user.
 
-- Representação de robôs com posição e cor.
-- Movimentação por comandos de texto ou números (sobrecarga).
-- O usuário define a posição do alimento na matriz (plano cartesiano em questão)
-- Tratamento de exceções com `MovimentoInvalidoException`.
-- Verificação de colisão com obstáculos:
-  - **Bomba**: destrói o robô ou paralisa (como no caso deste código)
-  - **Rocha**: impede a movimentação.
-- Exibição da matriz com a movimentação dos robôs e obstáculos.
-- Subclasse `RoboInteligente`, que evita repetir movimentos inválidos.
-- Múltiplos modos de simulação (cada uma abaixo corresponde a uma classe Main respectivamente):
-  - Controle manual do robô.
-  - Dois robôs se movendo aleatoriamente.
-  - Um robô comum vs um robô inteligente se movendo aleatoriamente sem obstáculos.
-  - Robô comum vs robô inteligente se movendo aleatoriamente com obstáculos.
+- The regular robot moves randomly after hitting obstacles.
+- The intelligent robot adapts its movement to avoid repeating invalid actions.
 
-## Conteúdo abordado
--Programação Orientada a Objetos 
+---
 
-## Tecnologias
+## Features
 
-- Java
+- Robot representation with position and color
+- Movement by text or numeric commands (method overloading)
+- Food placement chosen by the user
+- Custom exception handling via `MovimentoInvalidoException`
+- Collision detection with obstacles:
+  - Bomb: destroys or paralyzes the robot
+  - Rock: blocks movement
+- Grid display showing robots and obstacles
+- `RoboInteligente` subclass that avoids repeating invalid moves
+- Multiple game modes, each in a separate `Main` class:
+  - Manual control of a single robot
+  - Two robots moving randomly
+  - Regular robot vs. intelligent robot (no obstacles)
+  - Regular robot vs. intelligent robot (with obstacles)
+
+---
+
+## Topics Covered
+
+- Object-Oriented Programming (OOP)
+  - Classes and objects
+  - Inheritance
+  - Abstract classes
+  - Polymorphism
+  - Exception handling
+  - Method overloading
+
+---
+
+## Technologies
+
+- Java  
 - Eclipse IDE
 
-# Como executar
+---
 
-1. Clone o repositório:
+## How to Run
+
+1. Clone the repository:
    ```bash
    git clone https://github.com/J0Vict0r/NPC1-TRABALHO-2-ROBO.git
